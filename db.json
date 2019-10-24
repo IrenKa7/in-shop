@@ -1,0 +1,17 @@
+{
+    "posts": [
+      { "id": 1, "title": "json-server", "author": "typicode" }
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" },
+    "items": [
+        { "name": "BRANDED SHOE", "price": 300, "img": "/assets/images/Layer_7.jpg", "id": 1 },
+        { "name": "BRANDED SHOE", "price": 300, "img": "/assets/images/Layer_8.jpg", "id": 2 },
+        { "name": "BRANDED SHOE", "price": 300, "img": "/assets/images/Layer_9.jpg", "id": 3 },
+        { "name": "BRANDED SHOE", "price": 300, "img": "/assets/images/Layer_10.jpg", "id": 4 },
+        { "name": "BRANDED SHOE", "price": 300, "img": "/assets/images/Layer_11.jpg", "id": 5 },
+        { "name": "BRANDED SHOE", "price": 300, "img": "/assets/images/Layer_12.jpg", "id": 6 }
+      ]
+  }

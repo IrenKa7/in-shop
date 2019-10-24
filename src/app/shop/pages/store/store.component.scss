@@ -1,0 +1,117 @@
+.content{
+    width: 980px;
+    margin: 0px auto;
+    color: #afafaf;
+    font-family: bebas-neue, sans-serif;
+}
+.header{
+    background-color: white;
+    min-height: 30px;
+    width: 100%;
+    
+}
+.header p{
+    font-size: 30px;
+    padding-left: 67px ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0px;
+}
+.main-content{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 600px;
+}
+.side-menu {
+    background-color: white;
+    width: 25%;
+    box-sizing: border-box;
+}
+nav {
+    width: 100%;
+    text-align: center;
+}
+nav p{
+    font-size: 25px;
+}
+ul{
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    font-size: 25px;
+    box-sizing: border-box;
+    width: 100%;
+}
+ul li{
+    text-align: center;
+    height: 30px;
+    cursor: pointer;
+    width: 100%;
+    border-bottom: 2px solid #3bc2b69c;
+    color: #afafaf;
+    padding: 10px 0px;
+}
+ul li:hover {
+    background-color: #3bc2b69c;
+}
+ul a{
+    display: block;
+    text-decoration: none;
+    color: #afafaf;
+    line-height: 25px;
+
+    
+}
+.catalog{
+    width: 75%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 20px;
+
+}
+.item-content {
+    flex: 33%;
+}
+.item {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+    padding: 25px;
+    background-color: white;
+    text-align: center;
+    border-bottom: 5px solid #3cc395;
+    margin: 20px 0px;
+    min-height: 245px;
+    width: 74%;
+}
+.item img {
+    display: block;
+    margin: 0px auto;
+    height: 125px;
+}
+
+
+.item-price, .item-name{
+    color: #afafaf;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 25px;
+    font-family: bebas-neue, sans-serif;
+}
+.item-name {
+    margin: 20px auto;
+    display: block;
+
+}
+.buy {
+    border: 0px;
+    background-color: #3cc395;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    margin: 10px auto;
+    font-family: bebas-neue, sans-serif;
+    display: block;
+}

@@ -1,0 +1,32 @@
+.footer-container{
+    max-width: 980px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+    a {
+    color: #fff;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    }
+}
+h3 {
+    text-transform: capitalize;
+}
+.footer-column{
+    flex: 20%;
+}
+.copyright {
+    background-color: #2da89b;
+    height: 27px;
+    text-align: center;
+    color: #fff;
+    padding: 12px 0px;
+}

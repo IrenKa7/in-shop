@@ -1,0 +1,113 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500i,700&display=swap');
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "~@ng-select/ng-select/themes/default.theme.css";
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+
+@import url("https://use.typekit.net/zax8gha.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i,800&display=swap');
+
+body {
+    margin: 0px;
+    background: url('/assets/images/Layer_0.jpg');
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.input-control {
+    margin: 10px 0px;
+    margin-bottom: 15px;
+    label {
+        display: block;
+        margin: 4px 0px;
+        font-style: oblique;
+        padding-left: 8px;
+        font-size: 14px;
+        color: #333;
+    }
+    input{
+        width: 100%;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+}
+.window {
+    .buttons {
+        margin-top: 15px;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+
+.main-button {
+    background: #3cc395;
+    padding: 11px 23px;
+    border: 0px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #3cc395 !important;
+    box-shadow: 0px 0px 8px #4040407a;
+    margin: 0px 5px;
+    cursor: pointer;
+    &:hover{
+        background: #3cc395;
+        transition: 0.2s;
+    }
+}
+
+.button-white {
+    background: #fff !important;
+    color: #227ae2 !important;
+}
+
+
+.panel{
+    justify-content: space-between;
+    display: flex;
+}
+
+.search-form {
+    width: 35%;
+    position: relative;
+    i {
+        position: absolute;
+        left: 10px;
+        top: 9px;
+        color: silver;
+    }
+}
+.searchInput {
+    height: 33px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    padding: 0px 8px;
+    padding-left: 33px;
+    outline: none;
+    width: 100%;
+    &:focus{
+        border-color: #9999de;
+    }
+}
+
+
+h1 {
+    margin: 10px 0px;
+    font-size: 22px;
+    color: #333;
+}

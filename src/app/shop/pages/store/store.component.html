@@ -1,0 +1,32 @@
+<div class="content">
+    <div class="header">
+        <p>Aditii Store</p>
+    </div>
+    <div class="main-content">
+        <div class="side-menu">
+            <nav>
+                <p>Category</p>
+                <ul>
+                    <li><a href="#">Womans</a></li>
+                    <li><a href="#">Mens</a></li>
+                    <li><a href="#">For teenagers</a></li>
+                    <li><a href="#">For children</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="catalog">
+                <div class="item-content" *ngFor="let item of itemsService.items">
+                        <div class="item">
+                            <img src="{{item.img}}" alt="">
+                            <span class="item-name">{{item.name}}</span>
+                            <div class="item-panel">
+                                <span class="item-price">${{item.price}}</span>
+                                <button class="buy">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+    
+
+</div>

@@ -1,0 +1,74 @@
+header{
+    height: 68px;
+    background: #fff;
+    padding: 20px 0px;
+}
+.header-content {
+    max-width: 980px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.search-bar{
+    width: 434px;
+    height: 31px;
+    outline: 1px solid #e1e1e1;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+
+}
+.search-bar input{
+    border: none;
+    width: 88%;
+    height: 31px;
+}
+.search-bar img{
+    width: 11%;
+    height: 31px;
+}
+.cart-amount {
+    color: #a1a1a1;
+    font-family: bebas-neue, sans-serif;
+    font-size: 33px;
+    font-weight: 400;
+    line-height: 19px;
+}
+nav {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
+background-color: #4ccfc1;
+padding:6px 0px;
+}
+nav ul{
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+    margin: 0px;
+
+}
+nav li {
+    display: inline-block;
+}
+nav li a {
+    color: #fff;
+    font-family: bebas-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0px 43px;
+    position: relative;
+    font-size: 23px;
+    text-decoration: none;
+}
+nav li a:after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    background: #fff;
+    right: 0px;
+    top: 3px;
+}
+nav li:last-child a:after{
+    display: none;
+}

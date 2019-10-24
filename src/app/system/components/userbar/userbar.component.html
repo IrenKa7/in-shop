@@ -1,0 +1,13 @@
+<div class="userbar">
+    <div class="logo">
+        Shop Admin
+    </div>
+    <div class="user" mat-button [matMenuTriggerFor]="menu">
+            <i class="fas fa-user-ninja"></i > <span class="userName">{{userName}}</span> <i  class="fas fa-sort-down arrow"></i >
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Edit Profile</button>
+  <button mat-menu-item>Exit</button>
+</mat-menu>
+    </div>
+       
+</div>

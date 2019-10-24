@@ -1,0 +1,38 @@
+<div class="slider-content">
+    <div class="slider-img">
+        <img src="assets/images/Layer_1.png" alt="">
+    </div>
+    <div class="slider-info">
+        <h1>Cowhide Standard Crew</h1>
+        <p>White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic
+            cotton and comes in a regular fit. </p>
+        <button class="slider-button">SHOP NOW</button>
+    </div>
+</div>
+<div class="hot-items">
+    <div class="hot-items-content">
+        <div class="hot-item" *ngFor="let item of hotItems">
+            <img src="assets/images/{{item.img}}" alt="">
+            <div class="hot-item-panel">
+                <span class="hot-item-name">{{item.name}}</span>
+                <button class="shop" [routerLink]="[ '/home', item.id ]" >SHOP </button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<h2 class="fatured">FEATURED PRODUCTS</h2>
+<div class="shop-items">
+    <div class="shop-items-content">
+        <div class="item-content" *ngFor="let item of itemsService.items">
+            <div class="item">
+                <img src="{{item.img}}" alt="">
+                <span class="item-name">{{item.name}}</span>
+                <div class="item-panel">
+                    <span class="item-price">${{item.price}}</span>
+                    <button class="buy" [routerLink]="[ '/home', item.id ]">BUY NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

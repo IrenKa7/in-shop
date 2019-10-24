@@ -1,0 +1,51 @@
+.window-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: 0;
+    background: #0000007d;
+}
+.window{
+    position: fixed;
+    max-width: 70vh;
+    width: 40%;
+    overflow-y: auto;
+    min-height: 320px;
+    border-radius: 11px;
+    background: #fff;
+    z-index: 1000;
+}
+
+.content {
+    padding: 15px;
+}
+.window-header {
+    background:#3cc395;
+    height: 15px;
+    color: #fff;
+    padding: 14px 15px;
+    position: relative;
+}
+
+.close{
+    color: #ffffff96;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    background: none;
+    border: 0px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    &:hover{
+        color: #fff;
+        cursor: pointer;
+    }
+    
+}
+

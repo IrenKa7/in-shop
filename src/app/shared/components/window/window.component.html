@@ -1,0 +1,11 @@
+<div class="window-container">
+  <div class="window">
+    <div class="window-header">
+      {{title}}
+      <button class="close" (click)="close()"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="content">
+        <ng-content></ng-content>
+    </div>
+  </div>
+</div>

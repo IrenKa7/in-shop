@@ -1,0 +1,36 @@
+<div class="panel">
+
+
+    <button (click)="openWindowEvent(true);openWindowType = 'Add';itemsForm.reset()" class="main-button">Add Item</button>
+</div>
+
+<app-table [tableObject]="tabelObject" (edited)="editItem($event)" (action)="tabelAction($event)" (nextPage)="nextPage($event)"></app-table>
+
+<app-window *ngIf="openWindow" (closeWindowEvent)="openWindowEvent(false)" [title]="openWindowType +' Item'">
+    <ng-container class="up-panel-body">
+        <form [formGroup]="itemsForm" (ngSubmit)="onSubmit()">
+            <div class="input-control">
+                <label>Name</label>
+                <input type="text" placeholder="Name" formControlName="name" name="name">
+            </div>
+
+            <div class="input-control">
+                <label>Img</label>
+                <input type="text" placeholder="Img" formControlName="img" name="img">
+            </div>
+
+            <div class="input-control">
+                <label>price</label>
+                <input type="text" placeholder="Price" formControlName="price" name="price">
+            </div>
+
+
+            
+
+            <div class="buttons">
+                <button type="submit" class="main-button" type="submit">{{openWindowType}}</button>
+                <button (click)="openWindowEvent(false)" class="main-button button-white">Cansel</button>
+            </div>
+        </form>
+    </ng-container>
+</app-window>

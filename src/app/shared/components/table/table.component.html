@@ -1,0 +1,35 @@
+<div class="table"  infinite-scroll
+[infiniteScrollDistance]="scrollDistance"
+[infiniteScrollUpDistance]="scrollUpDistance"
+[infiniteScrollThrottle]="throttle"
+(scrolled)="onScrollDown()"
+(scrolledUp)="onUp()">
+  <div class="table-header" (clickOutside)="onClickedOutside($event)">
+    <div class="row" [style.justifyContent]="tableObject.table?.justifyContent">
+        <div class="col"  [style.flex-basis.px]="item.width" *ngFor="let item of tableObject.header">{{item.title}}</div>
+        <div class="col" *ngIf="tableObject.buttons">Actions</div>
+    </div>
+  </div>
+  <div class="table-body" >
+      <div class="row" [style.justifyContent]="tableObject.table?.justifyContent" *ngFor="let item of tableObject.values">
+        <div  class="col"  *ngFor="let row of tableObject.header"    [style.flex-basis.px]="row.width">
+          <div class="col-group" [ngClass]="{'id' : row.name == 'id'}">
+              <img class="col-img" *ngIf="row.type == 'image'" src="{{item[row.name]}}" alt="">
+              <input class="col-input" 
+              *ngIf="row.type !== 'image'"
+              (dblclick)="editable(row,col,item)"
+              #col
+              [readonly] = "item.editing == undefined"
+              [ngClass]="{'editing' : item.editing == row.name}"
+              (focusout)="editItem(item,row.name,col.value)"
+              (keyup.enter)="editItem(item,row.name,col.value)"
+              value="{{item[row.name]}}">  
+          </div>
+          <a *ngIf="row.type == 'url'" target="_blank" href="{{item[row.name]}}"><i class="fas fa-external-link-alt link"></i></a> 
+        </div>
+        <div class="col" *ngIf="tableObject.buttons" ><button class="action-button" (click)="actionButton(button.action,item)" *ngFor="let button of tableObject.buttons"><i class="fas fa-{{button.icon}}"></i></button></div>
+      
+      </div>
+      
+  </div>
+</div>

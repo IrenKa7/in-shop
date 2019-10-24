@@ -1,0 +1,155 @@
+
+h2 {
+    margin: 24px 0px;
+    font-family: bebas-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 31px;
+    max-width: 980px;
+    width: 100%;
+    margin: 24px auto;
+}
+
+.slider-content h1 {
+    color: #ffffff;
+    font-family: bebas-neue, sans-serif;
+    font-size: 61px;
+    font-weight: 400;
+    line-height: 54px;
+    max-width: 311px;
+    margin: 20px 0px;
+    margin-top: 0px;
+}
+.slider-content  p {
+    max-width: 350px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.slider-content {
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+}
+
+.slider-info {
+    flex: 50%;
+}
+
+.slider-button {
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    background: none;
+    padding: 8px 30px;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 400;
+    font-family: bebas-neue, sans-serif;
+}
+.slider-img{
+    flex: 50%;
+    text-align: center;
+}
+.hot-items, .shop-items {
+    width: 100%;
+    background: #fff;
+    padding: 1px 0px;
+}
+.hot-items-content, .shop-items-content {
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+}
+.hot-items-content{
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+.shop-items-content {
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.item img {
+    display: block;
+    margin: 0px auto;
+    height: 125px;
+}
+.item-content {
+    flex: 33%;
+}
+.item {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+    padding: 25px;
+    text-align: center;
+    border-bottom: 5px solid #3cc395;
+    margin: 47px 0px;
+    min-height: 245px;
+    width: 70%;
+}
+.hot-item{
+    height: 190px;
+    background: #fff;
+    display: flex;
+    flex: wrap;
+    margin: 25px 28px 25px 0px;
+    border-right: 1px solid rgba(0, 0, 0, 0.16);
+}
+.hot-item:last-child{
+    border-right: none;
+}
+.hot-item img{
+    width: 100%;
+}
+.hot-item-panel{
+    margin: 20px 10px;
+    font-family: "Bebas Neue";
+    font-size: 27px;
+}
+.item-price, .item-name{
+    color: #afafaf;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 25px;
+    font-family: bebas-neue, sans-serif;
+}
+.item-name {
+    margin: 20px auto;
+    display: block;
+
+}
+.hot-item-name {
+    font-family: bebas-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #afafaf;
+    text-transform: capitalize;
+    font-size: 27px;
+}
+.shop {
+    border: 0px;
+    background-color: #3cc395;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    margin: 10px 0px;
+    font-family: bebas-neue, sans-serif;
+    display: block;
+}
+.buy {
+    border: 0px;
+    background-color: #3cc395;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    margin: 10px auto;
+    font-family: bebas-neue, sans-serif;
+    display: block;
+}

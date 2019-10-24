@@ -1,0 +1,41 @@
+.sidebar {
+    position: fixed;
+    margin-top: 50px;
+    background: #aaa;
+    height: 100vh;
+    width: 300px;
+    background:#41c4b1;
+}
+
+ul {
+    list-style: none;
+    margin-top: 100px;
+    padding-left: 0px;
+
+    a {
+        color: #ffffffbf;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px;
+        display: block;
+        padding-left: 15px;
+        border-left: 5px solid#fff0;
+
+        i {
+            min-width: 24px;
+        }
+
+        &:hover{
+            color: #fff;
+        }
+        span {
+            padding-left: 15px;
+        }
+       
+    }
+    .is-active {
+        border-left: 5px solid #97c9ff;
+        background: #ffffff1f;
+        color: #fff;
+    }
+}

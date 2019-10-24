@@ -1,0 +1,41 @@
+.userbar {
+position: fixed;
+top:0px;
+left: 0px;
+width: 100%;
+height: 50px;
+background: #41c4b1;
+z-index: 3;
+display: flex;
+justify-content: space-between;
+}
+
+.user {
+    color: #fff;
+    margin: 0px 20px;
+    margin-right: 40px;
+    padding: 10px 0px;
+    i {
+        font-size: 25px;
+    }
+}
+
+.arrow {
+    font-size: 16px !important;
+    position: absolute;
+    top: 16px;
+}
+
+.userName {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.logo {
+    color: #fff;
+    margin: 0px 20px;
+    margin-left: 40px;
+    padding: 10px 0px;
+    font-size: 24px;
+}
